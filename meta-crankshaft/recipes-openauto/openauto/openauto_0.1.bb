@@ -1,6 +1,6 @@
 SUMMARY = "bitbake-layers recipe"
 DESCRIPTION = "OpenAuto" 
-LICENSE = "GNU GPLv3" 
+LICENSE = "GPL-3.0" 
 SRC_URI = "gitsm://github.com/opencardev/openauto.git;protocol=https"
 SRCREV = "crankshaft-ng"
 DEPENDS += "aasdk"

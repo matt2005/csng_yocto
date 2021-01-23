@@ -1,6 +1,6 @@
 SUMMARY = "bitbake-layers recipe"
 DESCRIPTION = "AndroidAuto SDK" 
-LICENSE = "GNU GPLv3" 
+LICENSE = "GPL-3.0" 
 SRC_URI = "gitsm://github.com/opencardev/aasdk.git;protocol=https"
 SRCREV = "development"
 DEPENDS = ""
