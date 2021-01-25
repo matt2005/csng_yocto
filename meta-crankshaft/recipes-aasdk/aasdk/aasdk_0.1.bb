@@ -6,12 +6,12 @@ SRC_URI = "git://github.com/opencardev/aasdk.git;protocol=https;branch=developme
 SRCREV = "development"
 DEPENDS = ""
 inherit cmake
-EXTRA_OECMAKE += "-DCMAKE_BUILD_TYPE=Release"
+EXTRA_OECMAKE += "-DCMAKE_BUILD_TYPE=Release ../git"
 # this is a revision number that should be updated every time you alter this recipe
 PR = "r0" 
 
 # this indicates the folder to run do_compile from.
-S="${WORKDIR}/aadsk_build"
+S="${WORKDIR}/aasdk"
 
 # this command will be run to compile your source code. it assumes you are in the
 # directory indicated by S. i'm just going to use make and rely on my Makefile
