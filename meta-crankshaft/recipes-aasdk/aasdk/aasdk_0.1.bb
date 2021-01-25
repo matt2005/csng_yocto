@@ -11,7 +11,7 @@ EXTRA_OECMAKE += "-DCMAKE_BUILD_TYPE=Release ../aasdk"
 PR = "r0" 
 
 # this indicates the folder to run do_compile from.
-S="${WORKDIR}/aasdk_build"
+S="${WORKDIR}/git"
 
 # this command will be run to compile your source code. it assumes you are in the
 # directory indicated by S. i'm just going to use make and rely on my Makefile
