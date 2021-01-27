@@ -11,19 +11,4 @@ SRC_URI = "git://github.com/thestk/rtaudio.git;protocol=https"
 SRCREV = "${PV}"
 S = "${WORKDIR}/rtaudio-${PV}"
 
-inherit qmake qt3x11
-
-do_configure_prepend() {
-	qmake -project -t lib -nopwd *.cpp *.h
-}
-
-EXTRA_QMAKEVARS_POST = "CONFIG=console CONFIG+=thread DEFINES+=__LINUX_OSS__ DEFINES+=__LINUX_ALSA__ LIBS+=-lasound"
-
-do_stage() {
-	install -m 0644 *.h ${STAGING_INCDIR}
-	oe_libinstall -so librtaudio-${PV} ${STAGING_LIBDIR}
-}
-
-do_install() {
-	oe_libinstall -so librtaudio-${PV} ${D}${libdir}
-}
+inherit cmake
