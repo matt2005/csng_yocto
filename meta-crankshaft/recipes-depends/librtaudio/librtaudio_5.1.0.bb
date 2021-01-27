@@ -14,5 +14,5 @@ EXTRA_OECMAKE += ' ../git'
 
 inherit cmake
 
- FILES_${PN} += "${libdir}/*"
- FILES_${PN}-dev = "${libdir}/* ${includedir}"
+FILES_${PN} += "${libdir}/*"
+FILES_${PN}-dev = "${libdir}/* ${includedir}"
