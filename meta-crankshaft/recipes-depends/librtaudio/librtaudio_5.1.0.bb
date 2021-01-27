@@ -12,5 +12,7 @@ SRCREV = "${PV}"
 S = "${WORKDIR}/rtaudio-${PV}"
 EXTRA_OECMAKE += ' ../git'
 
-
 inherit cmake
+
+ FILES_${PN} += "${libdir}/*"
+ FILES_${PN}-dev = "${libdir}/* ${includedir}"
