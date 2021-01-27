@@ -1,14 +1,14 @@
 SUMMARY = "bitbake-layers recipe"
 DESCRIPTION = "AndroidAuto SDK" 
 LICENSE = "GPL-3.0"
-LIC_FILES_CHKSUM = "file://../git/LICENSE;md5=1ebbd3e34237af26da5dc08a4e440464"
-SRC_URI = "git://github.com/opencardev/aasdk.git;protocol=https;branch=development"
+LIC_FILES_CHKSUM = "file://../git/CMakeLists.txt;md5=bf3449ca9bcc4aa9ea2dfd003cab1461"
+SRC_URI = "git://github.com/opendsh/aasdk.git;protocol=https;branch=development"
 SRCREV = "development"
 DEPENDS += " protobuf protobuf-native boost libusb"
 inherit cmake
 EXTRA_OECMAKE += "-DCMAKE_BUILD_TYPE=Release ../git"
 # this is a revision number that should be updated every time you alter this recipe
-PR = "r0" 
+PR = "r1" 
 
 # this indicates the folder to run do_compile from.
 S="${WORKDIR}/aasdk"
