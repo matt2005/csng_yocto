@@ -8,7 +8,7 @@ WORK IN PROGRESS
 
 ## TODO
 
-- [ ] - AASDK Recipe - in progress
-- [ ] - OpenAuto Recipe
+- [X] - AASDK Recipe - compiles OK
+- [ ] - OpenAuto Recipe - In progress
 - [ ] - Other apps needed
 - [ ] - Crankshaft Scripts
