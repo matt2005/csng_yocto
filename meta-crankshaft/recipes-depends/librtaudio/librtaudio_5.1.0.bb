@@ -10,5 +10,7 @@ LIC_FILES_CHKSUM = "file://../git/ChangeLog;md5=11dcab5b31f55cab7c13058279c5e923
 SRC_URI = "git://github.com/thestk/rtaudio.git;protocol=https"
 SRCREV = "${PV}"
 S = "${WORKDIR}/rtaudio-${PV}"
+EXTRA_OECMAKE += ' ../git'
+
 
 inherit cmake
