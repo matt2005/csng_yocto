@@ -9,6 +9,7 @@ WORK IN PROGRESS
 ## TODO
 
 - [X] - AASDK Recipe - compiles OK
+- [X] - librtaudio - compiles OK
 - [ ] - OpenAuto Recipe - In progress
 - [ ] - Other apps needed
 - [ ] - Crankshaft Scripts
