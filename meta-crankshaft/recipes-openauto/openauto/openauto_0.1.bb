@@ -6,7 +6,7 @@ SRC_URI = "git://github.com/opendsh/openauto.git;protocol=https;branch=develop"
 SRCREV = "develop"
 DEPENDS += " aasdk pulseaudio taglib"
 inherit cmake_qt5
-EXTRA_OECMAKE += '-DCMAKE_BUILD_TYPE=Release -DRPI_BUILD=TRUE" ../git'
+EXTRA_OECMAKE += '-DCMAKE_BUILD_TYPE=Release -DRPI_BUILD=TRUE ../git'
 
  
 # this is a revision number that should be updated every time you alter this recipe
