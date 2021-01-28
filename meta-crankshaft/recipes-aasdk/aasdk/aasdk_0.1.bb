@@ -1,7 +1,7 @@
 SUMMARY = "bitbake-layers recipe"
 DESCRIPTION = "AndroidAuto SDK" 
 LICENSE = "GPL-3.0"
-LIC_FILES_CHKSUM = "file://../git/CMakeLists.txt;md5=bf3449ca9bcc4aa9ea2dfd003cab1461"
+LIC_FILES_CHKSUM = "file://../git/CMakeLists.txt;md5=2a71911262da0e390c161bb44d29f979"
 SRC_URI = "git://github.com/matt2005/aasdk.git;protocol=https;branch=yocto_fix"
 SRCREV = "yocto_fix"
 DEPENDS += " protobuf protobuf-native boost libusb"
