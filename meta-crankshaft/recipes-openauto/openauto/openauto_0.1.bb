@@ -4,9 +4,9 @@ LICENSE = "GPL-3.0"
 LIC_FILES_CHKSUM = "file://../git/CMakeLists.txt;md5=8a99c155d021c9bd1fc088fdd7340b98"
 SRC_URI = "git://github.com/opendsh/openauto.git;protocol=https;branch=develop"
 SRCREV = "develop"
-DEPENDS += " protobuf protobuf-native aasdk pulseaudio taglib librtaudio qtmultimedia qtconnectivity gcc-runtime omxplayer"
+DEPENDS += " protobuf protobuf-native aasdk pulseaudio taglib librtaudio qtmultimedia qtconnectivity gcc-runtime omxplayer gstreamer"
 inherit cmake_qt5
-EXTRA_OECMAKE += '-DCMAKE_BUILD_TYPE=Release -DRPI_BUILD=TRUE ../git'
+EXTRA_OECMAKE += '-DCMAKE_BUILD_TYPE=Release -DRPI_BUILD=TRUE -DGST_BUILD=TRUE ../git'
 
  
 # this is a revision number that should be updated every time you alter this recipe
