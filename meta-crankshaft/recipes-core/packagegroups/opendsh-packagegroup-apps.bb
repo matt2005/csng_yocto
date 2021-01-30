@@ -6,5 +6,6 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 inherit packagegroup
 
 RDEPENDS_${PN} = " \
-    git-revision-file \
+    aasdk \
+    openauto \
 "

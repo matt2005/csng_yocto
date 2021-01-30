@@ -4,6 +4,6 @@ IMAGE_FEATURES += "splash"
 
 LICENSE = "MIT"
 
-CORE_IMAGE_EXTRA_INSTALL = "openauto"
-
 IMAGE_BASENAME = "${MACHINE}_OpenDsh-Image-Yocto"
+
+IMAGE_INSTALL_append = " opendsh-packagegroup-apps"
