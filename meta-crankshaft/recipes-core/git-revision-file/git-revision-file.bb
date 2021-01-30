@@ -5,7 +5,7 @@ inherit image-buildinfo
 REVISION_INFO_FILE = "build-layers-git-revisions"
 S = "${WORKDIR}"
 
-pyhton do_configure() {
+python do_configure() {
     with open(d.expand(${S}/${REVISION_INFO_FILE}) as file:
         file.writelines(get_layer_revs(d))
 }
