@@ -6,7 +6,7 @@ SRC_URI = "git://github.com/matt2005/openauto.git;protocol=https;branch=yocto"
 SRCREV = "yocto"
 DEPENDS += " aasdk pulseaudio gpsd taglib util-linux librtaudio"
 inherit cmake_qt5
-EXTRA_OECMAKE += '-DCMAKE_BUILD_TYPE=Release -DRPI3_BUILD=TRUE -DAASDK_INCLUDE_DIRS="${WORKDIR}/../aasdk/include" -DAASDK_LIBRARIES="${D}${bindir}/libaasdk.so" -DAASDK_PROTO_INCLUDE_DIRS="${WORKDIR}/../aasdk" -DAASDK_PROTO_LIBRARIES="${D}${bindir}/libaasdk_proto.so" ../git'
+EXTRA_OECMAKE += '-DCMAKE_BUILD_TYPE=Release -DRPI3_BUILD=TRUE ../git'
 
  
 # this is a revision number that should be updated every time you alter this recipe
