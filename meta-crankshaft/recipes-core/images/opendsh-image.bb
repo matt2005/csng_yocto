@@ -1,7 +1,7 @@
 SUMMARY = "OpenDsh production image"
 
 inherit core-image
-require recipes-sato/images/core-image-sato
+require ../../../meta/recipes-sato/images/core-image-sato
 
 IMAGE_FEATURES += "splash"
 
