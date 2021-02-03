@@ -1,9 +1,9 @@
 SUMMARY = "bitbake-layers recipe"
 DESCRIPTION = "OpenDash" 
 LICENSE = "GPL-3.0"
-LIC_FILES_CHKSUM = "file://../git/CMakeLists.txt;md5=2a71911262da0e390c161bb44d29f979"
+LIC_FILES_CHKSUM = "file://../git/README.md;md5=0090cf601ee0c561e539b55422b61b88 "
 SRC_URI = "git://github.com/opendsh/dash.git;protocol=https;branch=develop"
-SRCREV = "develop"
+SRCREV = "35ee8047c239df55fe2c4ccbb0e6156599cff8b9"
 DEPENDS += " aasdk openauto qt-gstreamer"
 inherit cmake
 EXTRA_OECMAKE += "-DCMAKE_BUILD_TYPE=Release -DGST_BUILD=true ../git"
