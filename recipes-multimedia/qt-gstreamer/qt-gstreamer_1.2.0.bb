@@ -3,7 +3,7 @@ include qt-gstreamer.inc
 LIC_FILES_CHKSUM = "file://COPYING;md5=2d5025d4aa3495befef8f17206a5b0a1"
 
 SRC_URI = " \
-    git://github.com/detrout/qt-gstreamer.git;branch=master;protocol=http \
+    git://github.com/GStreamer/qt-gstreamer.git;branch=master;protocol=http \
     "
 SRCREV = "master"
 
