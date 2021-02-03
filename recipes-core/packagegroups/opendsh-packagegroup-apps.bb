@@ -9,5 +9,5 @@ RDEPENDS_${PN} = " \
     aasdk \
     qt-gstreamer \
     openauto \
-    dash \
+    opendash \
 "
