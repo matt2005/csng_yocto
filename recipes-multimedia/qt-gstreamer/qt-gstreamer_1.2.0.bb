@@ -30,11 +30,11 @@ FILES_${PN}-examples += " \
     ${libdir}/qt5/examples/${PN}/* \
 "
 
-do_install_append() {
-    mkdir -p ${D}/usr/share/qt5/examples/qt-gstreamer/
-    install ${B}/examples/qmlplayer2/qmlplayer2 ${D}/usr/share/qt5/examples/qt-gstreamer/
-    install -d ${D}${datadir}/qt5/examples/${P}
-    install -m 0755 ${B}/examples/qmlplayer2/qmlplayer2 ${D}${datadir}/qt5/examples/${P}
-}
+#do_install_append() {
+#    mkdir -p ${D}/usr/share/qt5/examples/qt-gstreamer/
+#    install ${B}/examples/qmlplayer2/qmlplayer2 ${D}/usr/share/qt5/examples/qt-gstreamer/
+#    install -d ${D}${datadir}/qt5/examples/${P}
+#    install -m 0755 ${B}/examples/qmlplayer2/qmlplayer2 ${D}${datadir}/qt5/examples/${P}
+#}
 
 
