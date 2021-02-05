@@ -14,11 +14,11 @@ export EXTRA_OECMAKE = "-DQT_VERSION=5 \
 
 EXTRA_OECONF += "--disable-rpath"
 
-INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-FILES_${PN} += "\
-    ${libdir}/gstreamer-1.0/* \
-"
+#INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
+#INHIBIT_PACKAGE_STRIP = "1"
+#FILES_${PN} += "\
+#    ${libdir}/gstreamer-1.0/* \
+#"
 
 #FILES_${PN}-dbg += "\
 #    ${libdir}/gstreamer-1.0/.debug/* \
