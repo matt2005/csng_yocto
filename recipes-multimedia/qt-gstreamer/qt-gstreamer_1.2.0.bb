@@ -11,24 +11,26 @@ S = "${WORKDIR}/git"
 
 export EXTRA_OECMAKE = "-DQT_VERSION=5 \
 "
+# PSEUDO DEBUG
+export PSEUDO_DEBUG = "nfoPcvdDyerpswikVx"
 
 EXTRA_OECONF += "--disable-rpath"
 
 #INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
 #INHIBIT_PACKAGE_STRIP = "1"
-FILES_${PN} += "\
-    ${libdir}/gstreamer-1.0/* \
-"
+#FILES_${PN} += "\
+#    ${libdir}/gstreamer-1.0/* \
+#"
 
-FILES_${PN}-dbg += "\
-    ${libdir}/gstreamer-1.0/.debug/* \
-"
+#FILES_${PN}-dbg += "\
+#    ${libdir}/gstreamer-1.0/.debug/* \
+#"
 
-FILES_${PN}-dev += "${libdir}/cmake/* ${libdir}/cmake/QtGStreamer/*"
+#FILES_${PN}-dev += "${libdir}/cmake/* ${libdir}/cmake/QtGStreamer/*"
 
-FILES_${PN}-examples += " \
-    ${libdir}/qt5/examples/${PN}/* \
-"
+#FILES_${PN}-examples += " \
+#    ${libdir}/qt5/examples/${PN}/* \
+#"
 
 #do_install_append() {
 #    mkdir -p ${D}/usr/share/qt5/examples/qt-gstreamer/
