@@ -7,7 +7,6 @@ inherit packagegroup
 
 RDEPENDS_${PN} = " \
     aasdk \
-    qt-gstreamer \
     openauto \
     opendash \
 "
