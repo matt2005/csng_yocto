@@ -13,7 +13,7 @@ export EXTRA_OECMAKE = "-DQT_VERSION=5 \
 "
 DEPENDS = "boost qtmultimedia gstreamer"
 
-inherit cmake
+inherit cmake_qt5
 
 do_configure() {
         # Ensure we get the cmake configure and not qmake
