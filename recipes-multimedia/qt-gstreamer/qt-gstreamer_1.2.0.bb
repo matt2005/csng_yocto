@@ -18,8 +18,7 @@ EXTRA_OECONF += "--disable-rpath"
 #INHIBIT_PACKAGE_STRIP = "1"
 FILES_${PN} += "\
     ${libdir}/gstreamer-1.0/* \
-    ${B}/usr/lib/qml/QtGStreamer/libQtGStreamerQuick2.so
-    ${B}/usr/lib/qml/QtGStreamer/qmldir
+    ${B}/usr/lib/qml/QtGStreamer/** \
 "
 
 #FILES_${PN}-dbg += "\
