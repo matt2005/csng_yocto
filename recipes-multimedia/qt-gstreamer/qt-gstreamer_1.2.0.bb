@@ -11,7 +11,7 @@ S = "${WORKDIR}/git"
 
 export EXTRA_OECMAKE = "-DQT_VERSION=5 \
 "
-EXTRA_OECMAKE += "-DSUFFIX_LIB=${@d.getVar('baselib', True).replace('lib', '')}
+EXTRA_OECMAKE += "-DSUFFIX_LIB=${@d.getVar('baselib', True).replace('lib', '')}"
 
 EXTRA_OECONF += "--disable-rpath"
 
