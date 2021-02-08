@@ -9,8 +9,6 @@ SRCREV = "master"
 
 S = "${WORKDIR}/git"
 
-DEPENDS = "boost qtmultimedia gstreamer"
-
 do_configure() {
         # Ensure we get the cmake configure and not qmake
         cmake_do_configure
