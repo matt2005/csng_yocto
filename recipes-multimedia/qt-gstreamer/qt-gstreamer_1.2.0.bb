@@ -11,6 +11,7 @@ S = "${WORKDIR}/git"
 
 export EXTRA_OECMAKE = "-DQT_VERSION=5 \
 "
+EXTRA_OECMAKE += "-DSUFFIX_LIB=${@d.getVar('baselib', True).replace('lib', '')}
 
 EXTRA_OECONF += "--disable-rpath"
 
@@ -18,7 +19,8 @@ EXTRA_OECONF += "--disable-rpath"
 #INHIBIT_PACKAGE_STRIP = "1"
 FILES_${PN} += "\
     ${libdir}/gstreamer-1.0/* \
-    ${B}/usr/lib/qml/QtGStreamer/* \
+    ${B}/usr/lib/qml/QtGStreamer/libQtGStreamerQuick2.so \
+    ${B}/usr/lib/qml/QtGStreamer/qmldir \
 "
 
 #FILES_${PN}-dbg += "\
