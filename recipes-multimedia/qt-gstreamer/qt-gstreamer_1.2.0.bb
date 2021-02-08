@@ -11,33 +11,27 @@ S = "${WORKDIR}/git"
 
 export EXTRA_OECMAKE = "-DQT_VERSION=5 \
 "
-EXTRA_OECMAKE += "-DSUFFIX_LIB=${@d.getVar('baselib', True).replace('lib', '')}"
+DEPENDS = "boost qtmultimedia gstreamer"
 
-EXTRA_OECONF += "--disable-rpath"
+inherit cmake
 
-#INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
-#INHIBIT_PACKAGE_STRIP = "1"
-FILES_${PN} += "\
-    ${libdir}/gstreamer-1.0/* \
-    ${B}/usr/lib/qml/QtGStreamer/libQtGStreamerQuick2.so \
-    ${B}/usr/lib/qml/QtGStreamer/qmldir \
-"
-
-#FILES_${PN}-dbg += "\
-#    ${libdir}/gstreamer-1.0/.debug/* \
-#"
-
-#FILES_${PN}-dev += "${libdir}/cmake/* ${libdir}/cmake/QtGStreamer/*"
-
-#FILES_${PN}-examples += " \
-#    ${libdir}/qt5/examples/${PN}/* \
-#"
-
-#do_install_append() {
-#    mkdir -p ${D}/usr/share/qt5/examples/qt-gstreamer/
-#    install ${B}/examples/qmlplayer2/qmlplayer2 ${D}/usr/share/qt5/examples/qt-gstreamer/
-#    install -d ${D}${datadir}/qt5/examples/${P}
-#    install -m 0755 ${B}/examples/qmlplayer2/qmlplayer2 ${D}${datadir}/qt5/examples/${P}
-#}
+do_configure() {
+        # Ensure we get the cmake configure and not qmake
+        cmake_do_configure
+}
 
 
+export EXTRA_OECMAKE = "-DQT_QMAKE_EXECUTABLE=${OE_QMAKE_QMAKE} \
+                        -DQT_LRELEASE_EXECUTABLE=${OE_QMAKE_LRELEASE} \
+                        -DQT_MOC_EXECUTABLE=${OE_QMAKE_MOC} \
+                        -DQT_UIC_EXECUTABLE=${OE_QMAKE_UIC} \
+                        -DQT_RCC_EXECUTABLE=${OE_QMAKE_RCC} \
+                        -DQT_LIBRARY_DIR=${OE_QMAKE_LIBDIR_QT} \
+                        -DQT_HEADERS_DIR=${OE_QMAKE_INCDIR_QT} \
+                        -DQT_QTCORE_INCLUDE_DIR=${OE_QMAKE_INCDIR_QT}/QtCore \
+                        -DQT_QTGUI_INCLUDE_DIR=${OE_QMAKE_INCDIR_QT}/QtGui \
+                        -DQTGSTREAMER_EXAMPLES=ON      \
+                        -DQT_VERSION=5 \
+                        -DUSE_GST_PLUGIN_DIR=ON \
+                        -DUSE_QT_PLUGIN_DIR=ON \
+                        "
