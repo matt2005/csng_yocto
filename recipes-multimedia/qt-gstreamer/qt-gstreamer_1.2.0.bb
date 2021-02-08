@@ -9,8 +9,6 @@ SRCREV = "master"
 
 S = "${WORKDIR}/git"
 
-export EXTRA_OECMAKE = "-DQT_VERSION=5 \
-"
 DEPENDS = "boost qtmultimedia gstreamer"
 
 do_configure() {
