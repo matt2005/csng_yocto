@@ -18,8 +18,6 @@ FILES_${PN} += "${libdir}/${PN}/libgstqt5videosink.so"
 FILES_${PN} += "${OECORE_TARGET_SYSROOT}/**/libQtGStreamerQuick2.so"
 FILES_${PN} += "${OECORE_TARGET_SYSROOT}/**/qmldir"
 
- ${UNINATIVE_STAGING_DIR}-uninative/${BUILD_ARCH}-linux
-
 export EXTRA_OECMAKE = "-DQT_QMAKE_EXECUTABLE=${OE_QMAKE_QMAKE} \
                         -DQT_LRELEASE_EXECUTABLE=${OE_QMAKE_LRELEASE} \
                         -DQT_MOC_EXECUTABLE=${OE_QMAKE_MOC} \
