@@ -11,7 +11,9 @@ CORE_OS = " \
 WIFI_SUPPORT = " \
 	packagegroup-base \
 	iw \
-	linux-firmware-bcm43430\
+	linux-firmware-bcm43430 \
+	linux-firmware-bcm43455 \
+	linux-firmware-bcm43456 \
 	wpa-supplicant \
 	init-ifupdown \
 	wpa-supplicant \
