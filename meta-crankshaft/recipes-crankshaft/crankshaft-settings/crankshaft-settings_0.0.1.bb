@@ -30,6 +30,7 @@ SRCREV = "${PV}"
 #}
 
 do_deploy() {
+   install -d ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}
    cp ${WORKDIR}/crankshaft_default_env.sh ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}/
    install -d ${D}/opt/crankshaft
    cp ${WORKDIR}/crankshaft_default_env.sh ${D}/opt/crankshaft
