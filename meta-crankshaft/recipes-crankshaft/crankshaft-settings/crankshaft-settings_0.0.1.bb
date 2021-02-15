@@ -15,6 +15,7 @@ SRC_URI[defaultcfg.md5sum] = "908cf6de76e9800261fe344ae572605b"
 SRC_URI[systemcfg.md5sum] = "f3d799c35657fd8319b1b90aed5107d0"
 SRCREV = "${PV}"
 
+
 FILES_${PN} += "/opt/crankshaft/* /opt/crankshaft/ \
 /boot/crankshaft/* /boot/crankshaft/ \
 "
@@ -23,8 +24,8 @@ do_install() {
    install -d ${D}/opt/crankshaft
    install -m 0755 ${WORKDIR}/crankshaft_default_env.sh ${D}/opt/crankshaft/
    install -m 0755 ${WORKDIR}/crankshaft_system_env.sh ${D}/opt/crankshaft/
-   install -d ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}/crankshaft
-   install -m 0755 ${WORKDIR}/crankshaft_default_env.sh ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}/crankshaft/crankshaft_env.sh
+   install -d ${D}/boot/crankshaft
+   install -m 0755 ${WORKDIR}/crankshaft_default_env.sh ${D}/boot/crankshaft/crankshaft_env.sh
 #   install -d ${D}${systemd_unitdir}/system
 #   install -m 0644 ${WORKDIR}/test_systemd.service ${D}${systemd_unitdir}/system
 }
