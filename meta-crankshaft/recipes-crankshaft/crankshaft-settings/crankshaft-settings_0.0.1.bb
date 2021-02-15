@@ -16,8 +16,8 @@ SRC_URI[systemcfg.md5sum] = "f3d799c35657fd8319b1b90aed5107d0"
 SRCREV = "${PV}"
 
 
-FILES_${PN} += "${D}/opt/crankshaft/* /opt/crankshaft/ \
-${D}/boot/crankshaft/* /boot/crankshaft/ \
+FILES_${PN} += "/opt/crankshaft/* /opt/crankshaft/ \
+/boot/crankshaft/* /boot/crankshaft/ \
 "
 
 do_install() {
