@@ -1,4 +1,4 @@
-DESCRIPTION = "Crankshaft settings"
+DESCRIPTION = "Crankshaft-settings"
 SECTION = "tools"
 LICENSE = "MIT"
 HOMEPAGE = "https://get-crankshaft.com"
