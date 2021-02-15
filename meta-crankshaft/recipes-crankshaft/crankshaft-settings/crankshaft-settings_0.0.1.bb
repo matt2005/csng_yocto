@@ -30,10 +30,10 @@ SRCREV = "${PV}"
 #}
 
 do_deploy() {
-   cp ${S}/crankshaft_default_env.sh ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}/
+   cp ${WORKDIR}/crankshaft_default_env.sh ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}/
    install -d ${D}/opt/crankshaft
-   cp ${S}/crankshaft_default_env.sh ${D}/opt/crankshaft
-   cp ${S}/crankshaft_system_env.sh ${D}/opt/crankshaft
+   cp ${WORKDIR}/crankshaft_default_env.sh ${D}/opt/crankshaft
+   cp ${WORKDIR}/crankshaft_system_env.sh ${D}/opt/crankshaft
 }
 addtask deploy before do_build after do_install
 do_deploy[dirs] += "${DEPLOYDIR}/${BOOTFILES_DIR_NAME}"
