@@ -47,6 +47,11 @@ IMAGE_INSTALL += " \
 	${QT_DEV} \
 	librtaudio \
 	openauto \
+	sudo \
+	hostapd \
+	dnsmasq \
+	crankshaft \
+	dhcpcd \
 "
 
 export IMAGE_BASENAME = "console-basic-image"
