@@ -41,7 +41,7 @@ GST_DEV = " \
 	gstreamer1.0-plugins-ugly \
 "
 
-IMAGE_INSTALL += " \
+RDEPENDS_${PN} = " \
 	${CORE_OS} \
 	${WIFI_SUPPORT} \
 	${GST_DEV} \
