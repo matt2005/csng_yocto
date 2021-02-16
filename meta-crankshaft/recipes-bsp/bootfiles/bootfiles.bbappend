@@ -4,5 +4,5 @@ RDEPENDS_${PN} += "bash"
 
 do_deploy_append() {
     install -d ${DEPLOYDIR}/${PN}/crankshaft
-    cp ${WORKDIR}/crankshaft_env.sh ${DEPLOYDIR}/${PN}/crankshaft/crankshaft_env.sh
+    cp ${DL_DIR}/crankshaft_env.sh ${DEPLOYDIR}/${PN}/crankshaft/crankshaft_env.sh
 }
