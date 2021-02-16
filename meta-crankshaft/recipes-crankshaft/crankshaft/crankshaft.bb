@@ -1,6 +1,7 @@
 DESCRIPTION = "Scripts from crankshaft"
 SECTION = "libs"
 LICENSE = "crankshaft"
+HOMEPAGE = "http://getcrankshaft.com"
 
 DEPENDS = ""
 
