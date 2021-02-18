@@ -57,6 +57,7 @@ INHERIT += "extrausers"
 EXTRA_USERS_PARAMS = "\
 	usermod -P raspberry root; \
 	useradd -P raspberry -G sudo pi; \
+	groupadd netdev; \
 "
 
 # this will force root to change password on first login
