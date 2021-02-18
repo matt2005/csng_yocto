@@ -2,6 +2,7 @@ DESCRIPTION = "Crankshaft package group"
 SUMMARY = "Crankshaft package group"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
+INSANE_SKIP_${PN} = "dev-deps"
 
 inherit packagegroup
 
