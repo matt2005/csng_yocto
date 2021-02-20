@@ -15,6 +15,6 @@ SRC_URI[autoapp_helper.md5sum] = "77c80ce324682557acf6e648cfbc4535"
 
 do_install() {
 	install -d ${D}${bindir}
-	install -m 0644 ${S}/crankshaft ${D}${bindir}/crankshaft
-	install -m 0644 ${S}/autoapp_helper ${D}${bindir}/autoapp_helper
+	install -m 0644 ${S}/../crankshaft ${D}${bindir}/crankshaft
+	install -m 0644 ${S}/../autoapp_helper ${D}${bindir}/autoapp_helper
 }
