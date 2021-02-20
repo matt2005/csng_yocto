@@ -53,6 +53,7 @@ RDEPENDS_${PN} = " \
 	hostapd \
 	dnsmasq \
 	crankshaft \
+	crankshaft-helpers \
 	dhcpcd \
 "
 
