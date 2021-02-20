@@ -11,7 +11,7 @@ SRC_URI= "https://raw.githubusercontent.com/opencardev/prebuilts/master/csmt/cra
 https://raw.githubusercontent.com/opencardev/prebuilts/master/openauto/autoapp_helper;name=autoapp_helper \
 "
 SRC_URI[crankshaft.md5sum] = "26cb4d70aa81284b5830b20c19d72234"
-SRC_URI[autoapp_helper.md5sum] = "696884d8ea1137895d71cb395ba7be4e"
+SRC_URI[autoapp_helper.md5sum] = "77c80ce324682557acf6e648cfbc4535"
 
 do_install() {
 	install -d ${D}${bindir}
