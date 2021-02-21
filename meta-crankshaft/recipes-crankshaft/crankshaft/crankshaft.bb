@@ -22,7 +22,7 @@ do_install() {
 	install -m 0644 ${S}/stage3/03-crankshaft-base/files/opt/crankshaft/crankshaft_default_env.sh ${D}/opt/crankshaft/
 	install -m 0644 ${S}/stage3/03-crankshaft-base/files/opt/crankshaft/crankshaft_system_env.sh ${D}/opt/crankshaft/
 	install -m 0755 ${S}/stage3/03-crankshaft-base/files/opt/crankshaft/service_hotspot.sh ${D}/opt/crankshaft/
-	install -m 0644 ${S}/stage3/03-crankshaft-base/files/opt/crankshaft/service_hostapdchange.sh ${D}/opt/crankshaft/
+	install -m 0755 ${S}/stage3/03-crankshaft-base/files/opt/crankshaft/service_hostapdchange.sh ${D}/opt/crankshaft/
 	install -m 0755 ${S}/stage3/03-crankshaft-base/files/opt/crankshaft/service_wpachange.sh ${D}/opt/crankshaft/
 	install -m 0755 ${S}/stage3/03-crankshaft-base/files/opt/crankshaft/service_wifisetup.sh ${D}/opt/crankshaft/
 
