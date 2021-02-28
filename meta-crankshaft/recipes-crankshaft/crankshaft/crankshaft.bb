@@ -77,9 +77,9 @@ do_install() {
 	install -m 0644 ${S}/stage3/03-crankshaft-base/files/etc/udev/rules.d/51-android.master                 "${D}/etc/udev/rules.d/"
 	install -m 0644 ${S}/stage3/03-crankshaft-base/files/etc/udev/rules.d/10-automount.rules                "${D}/etc/udev/rules.d/"
 	install -m 0755 ${S}/stage3/03-crankshaft-base/files/etc/rc.local                                       "${D}/etc/"
-	install -m 0644 ${S}/stage3/03-crankshaft-base/files/etc/issue                                          "${D}/etc/"
-	install -m 0644 ${S}/stage3/03-crankshaft-base/files/etc/issue.net                                      "${D}/etc/"
-	install -m 0644 ${S}/stage3/03-crankshaft-base/files/etc/motd                                           "${D}/etc/"
+	#install -m 0644 ${S}/stage3/03-crankshaft-base/files/etc/issue                                          "${D}/etc/"
+	#install -m 0644 ${S}/stage3/03-crankshaft-base/files/etc/issue.net                                      "${D}/etc/"
+	#install -m 0644 ${S}/stage3/03-crankshaft-base/files/etc/motd                                           "${D}/etc/"
 	install -d "${D}/etc/rsyslog.d/"
 	install -m 0644 ${S}/stage3/03-crankshaft-base/files/etc/rsyslog.d/disable-logspam.conf                 "${D}/etc/rsyslog.d/"
 
