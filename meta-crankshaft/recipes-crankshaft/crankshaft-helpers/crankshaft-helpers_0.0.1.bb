@@ -4,7 +4,7 @@ LICENSE = "crankshaft"
 HOMEPAGE = "http://getcrankshaft.com"
 
 DEPENDS = "crankshaft"
-RDEPENDS_${PN} += "bash"
+RDEPENDS_${PN} += "bash zip"
 S="${WORKDIR}"
 
 PR = "r0"

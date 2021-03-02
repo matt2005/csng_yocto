@@ -55,6 +55,8 @@ RDEPENDS_${PN} = " \
 	crankshaft \
 	crankshaft-helpers \
 	dhcpcd \
+	zip \
+	crda \
 "
 
 INSANE_SKIP_${PN} = "dev-deps"
