@@ -22,7 +22,7 @@ VIRTUAL-RUNTIME_initscripts = ""
 
 MACHINE_FEATURES_remove = "apm"
 
-IMAGE_FSTYPES = "wic.bz2"
+IMAGE_FSTYPES = "rpi-sdimg"
 
 MACHINE = "raspberrypi4-64"
 
