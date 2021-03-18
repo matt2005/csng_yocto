@@ -21,3 +21,4 @@ do_install_append () {
 	cp -R --no-dereference --preserve=mode,links -v  ${S}/include/f1x ${D}${includedir}/
 	install -m 0644 ${S}/../build/aasdk_proto/*.h ${D}${includedir}/aasdk_proto
 }
+do_compile[progress] = "percent"

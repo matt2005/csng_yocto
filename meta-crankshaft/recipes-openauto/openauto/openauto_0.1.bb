@@ -20,3 +20,4 @@ PR = "r0"
 S="${WORKDIR}/git"
 
 INSANE_SKIP_${PN} = "dev-deps"
+do_compile[progress] = "percent"
