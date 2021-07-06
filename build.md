@@ -13,5 +13,6 @@ mkdir -p ~/yocto/download
 export SSTATE_DIR = "$(pwd)/yocto/sstate-cache"
 export DL_DIR = "$(pwd)/yocto/download"
 source ~/yocto/poky-dunfell/oe-init-build-env ~/yocto/rpi/build
+bitbake crankshaft-image --runall=fetch
 bitbake crankshaft-image
 ```
