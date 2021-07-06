@@ -10,8 +10,8 @@ cp ~/yocto/poky-dunfell/meta-crankshaft/meta-crankshaft/conf/bblayers.conf.sampl
 export MACHINE=raspberrypi3
 mkdir -p ~/yocto/sstate-cache
 mkdir -p ~/yocto/download
-export SSTATE_DIR = "$(pwd)/yocto/sstate-cache"
-export DL_DIR = "$(pwd)/yocto/download"
+export SSTATE_DIR = "$(pwd)/sstate-cache"
+export DL_DIR = "$(pwd)/download"
 source ~/yocto/poky-dunfell/oe-init-build-env ~/yocto/rpi/build
 bitbake crankshaft-image --runall=fetch
 bitbake crankshaft-image
