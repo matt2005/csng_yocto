@@ -17,4 +17,6 @@ BBLAYERS ?= " \
   ${HOME}/yocto/poky-dunfell/meta-raspberrypi \
   ${HOME}/yocto/poky-dunfell/meta-security \
   ${HOME}/yocto/poky-dunfell/meta-crankshaft/meta-crankshaft \
+  ${HOME}/yocto/poky-dunfell/meta-rpi64 \
+  
 "
