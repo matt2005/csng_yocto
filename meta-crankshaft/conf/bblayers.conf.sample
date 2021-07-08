@@ -13,9 +13,9 @@ BBLAYERS ?= " \
   ${HOME}/yocto/poky-dunfell/meta-openembedded/meta-networking \
   ${HOME}/yocto/poky-dunfell/meta-openembedded/meta-perl \
   ${HOME}/yocto/poky-dunfell/meta-openembedded/meta-python \
-  ${HOME}/yocto/poky-dunfell/poky-dunfell/meta-virtualization \
+  ${HOME}/yocto/poky-dunfell/meta-virtualization \
   ${HOME}/yocto/poky-dunfell/meta-qt5 \
-  ${HOME}/yocto/poky-dunfell/poky-dunfell/meta-qt5-extra \
+  ${HOME}/yocto/poky-dunfell/meta-qt5-extra \
   ${HOME}/yocto/poky-dunfell/meta-raspberrypi \
   ${HOME}/yocto/poky-dunfell/meta-security \
   ${HOME}/yocto/poky-dunfell/meta-crankshaft/meta-crankshaft \
