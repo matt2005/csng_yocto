@@ -69,6 +69,3 @@ PATCHRESOLVE = "noop"
 RM_OLD_IMAGE = "1"
 # INHERIT += "rm_work"
 CONF_VERSION = "1"
-# Add wayland for qt
-DISTRO_FEATURES_NATIVESDK_append = " wayland"
-DISTRO_FEATURES_append = " wayland"
