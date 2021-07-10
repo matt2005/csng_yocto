@@ -2,7 +2,7 @@
 mkdir -p ~/yocto
 cd ~/yocto
 sudo chmod 777 ~/yocto
-repo init -u https://github.com/matt2005/csng_yocto.git -b main -m csngx64.xml
+repo init -u https://github.com/matt2005/csng_yocto.git -b csng_yocto -m csngx64.xml
 repo sync
 mkdir -p ~/yocto/rpi/build/conf
 cp ~/yocto/poky-dunfell/meta-crankshaft/conf/local.conf.sample ~/yocto/rpi/build/conf/local.conf
