@@ -11,7 +11,7 @@ SRC_URI = "git://github.com/opencardev/crankshaft.git;protocol=https;branch=cran
            file://0001-Update-to-new-paths-for-yocto-build.patch \
            file://0001-Fix-paths.-Need-to-run-wpa_supplicant-in-order-to-co.patch \
            "
-SRCREV = "f815963a333e1493986f8cf4c00cb6d67ebc2daa"
+SRCREV = "393f6733d89b3a2f233ddeaf49bdc84cdc7ae097"
 inherit systemd
 
 S = "${WORKDIR}/git"
