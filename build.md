@@ -5,8 +5,8 @@ sudo chmod 777 ~/yocto
 repo init -u https://github.com/matt2005/csng_yocto.git -b csng_yocto -m csngx64.xml
 repo sync
 mkdir -p ~/yocto/rpi/build/conf
-cp ~/yocto/poky-hardknott/meta-opencardev/conf/local.conf.sample ~/yocto/rpi/build/conf/local.conf
-cp ~/yocto/poky-hardknott/meta-opencardev/conf/bblayers.conf.sample ~/yocto/rpi/build/conf/bblayers.conf
+cp ~/yocto/poky-hardknott/meta-opencardev/meta-openauto/conf/local.conf.sample ~/yocto/rpi/build/conf/local.conf
+cp ~/yocto/poky-hardknott/meta-opencardev/meta-openauto/conf/bblayers.conf.sample ~/yocto/rpi/build/conf/bblayers.conf
 export MACHINE=raspberrypi4-64
 mkdir -p ~/yocto/sstate-cache
 mkdir -p ~/yocto/download
