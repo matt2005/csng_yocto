@@ -23,7 +23,7 @@
   <project name="meta-openembedded" revision="refs/heads/dunfell"  remote="oe" path="poky-dunfell/meta-openembedded" />
   <project name="meta-qt5" revision="refs/heads/dunfell"  remote="qt5" path="poky-dunfell/meta-qt5" />
   <project name="meta-virtualization" revision="refs/heads/dunfell" remote="yocto" path="poky-dunfell/meta-virtualization" />
-  <project name="meta-crankshaft" revision="refs/heads/main"  remote="opencardev" path="poky-dunfell/meta-crankshaft" />
+  <project name="meta-opencardev" revision="refs/heads/main"  remote="opencardev" path="poky-dunfell/meta-opencardev" />
   <project name="meta-qt5-extra" revision="refs/heads/dunfell"  remote="schnitzeltony" path="poky-dunfell/meta-qt5-extra" />
   <project name="meta-jumpnow" revision="refs/heads/dunfell"  remote="jumpnow" path="poky-dunfell/meta-jumpnow" />
   <project name="meta-rpi64" revision="refs/heads/dunfell"  remote="jumpnow" path="poky-dunfell/meta-rpi64" />
