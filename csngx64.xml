@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default remote="jumpnow" revision="default"/>
+  <default remote="yocto" revision="default"/>
 
   <!-- You can have as many remote repositories as you like -->
 
