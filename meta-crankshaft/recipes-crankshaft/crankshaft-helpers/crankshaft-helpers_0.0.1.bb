@@ -17,6 +17,8 @@ SRC_URI[crankshaft.sha256sum] = "c37bce42dc5c6c28b0ea91eff3881d09a2a675902348b2c
 SRC_URI[autoapp_helper.sha256sum] = "d2de76ac0afa3a5bd8d9202f30d76af6a84fe70aa63d55a1cef049db0bfefe14"
 SRC_URI[LICENSE.sha256sum] = "7c34d28e784b202aa4998f477fd0aa9773146952d7f6fa5971369fcdda59cf48"
 
+SRC_REV="5d5dd3db89ec087cec17a5acf3921feefc6dc1e6"
+
 do_install() {
 	install -d ${D}/usr/local/bin
 	install -m 0755 ${S}/crankshaft ${D}/usr/local/bin
