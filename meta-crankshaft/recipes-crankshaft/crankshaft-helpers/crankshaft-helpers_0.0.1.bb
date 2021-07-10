@@ -8,14 +8,14 @@ S="${WORKDIR}"
 
 PR = "r1"
 LICENSE = "GPL-3.0"
-LIC_FILES_CHKSUM = "file://../git/LICENSE;md5=1ebbd3e34237af26da5dc08a4e440464"
+LIC_FILES_CHKSUM = "file://../git/LICENSE;md5=650b869bd8ff2aed59c62bad2a22a821"
 SRC_URI= "https://raw.githubusercontent.com/opencardev/prebuilts/master/csmt/crankshaft;name=crankshaft \
 https://raw.githubusercontent.com/opencardev/prebuilts/master/openauto/autoapp_helper;name=autoapp_helper \
 https://raw.githubusercontent.com/opencardev/prebuilts/master/LICENSE;name=LICENSE \
 "
 SRC_URI[crankshaft.sha256sum] = "c37bce42dc5c6c28b0ea91eff3881d09a2a675902348b2cb1792e2d3c785b30a"
 SRC_URI[autoapp_helper.sha256sum] = "d2de76ac0afa3a5bd8d9202f30d76af6a84fe70aa63d55a1cef049db0bfefe14"
-SRC_URI[LICENSE.md5sum] = "1ebbd3e34237af26da5dc08a4e440464"
+SRC_URI[LICENSE.sha256sum] = "7c34d28e784b202aa4998f477fd0aa9773146952d7f6fa5971369fcdda59cf48"
 
 do_install() {
 	install -d ${D}/usr/local/bin
