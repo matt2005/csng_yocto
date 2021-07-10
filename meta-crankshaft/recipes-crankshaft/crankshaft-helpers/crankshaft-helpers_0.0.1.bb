@@ -8,7 +8,7 @@ S="${WORKDIR}"
 
 PR = "r1"
 LICENSE = "GPL-3.0"
-LIC_FILES_CHKSUM = "file://../../git/LICENSE;md5=1ebbd3e34237af26da5dc08a4e440464"
+LIC_FILES_CHKSUM = "file://../git/LICENSE;md5=1ebbd3e34237af26da5dc08a4e440464"
 SRC_URI= "https://raw.githubusercontent.com/opencardev/prebuilts/master/csmt/crankshaft;name=crankshaft \
 https://raw.githubusercontent.com/opencardev/prebuilts/master/openauto/autoapp_helper;name=autoapp_helper \
 "
