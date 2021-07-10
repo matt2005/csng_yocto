@@ -7,9 +7,7 @@
   <remote name="yocto" fetch="git://git.yoctoproject.org" />
   <remote name="oe" fetch="git://git.openembedded.org" />
   <remote name="qt5" fetch="git://github.com/meta-qt5" />
-  <remote name="jumpnow" fetch="git://github.com/jumpnow" />
   <remote name="opencardev" fetch="git://github.com/opencardev" />
-  <remote name="schnitzeltony" fetch="git://github.com/schnitzeltony" />
 
   <!-- List all the repositories you want to fetch -->
   <!-- "name": git repository's name on hosting server
@@ -24,8 +22,4 @@
   <project name="meta-qt5" revision="refs/heads/hardknott"  remote="qt5" path="poky-hardknott/meta-qt5" />
   <project name="meta-virtualization" revision="refs/heads/hardknott" remote="yocto" path="poky-hardknott/meta-virtualization" />
   <project name="meta-opencardev" revision="refs/heads/hardknott"  remote="opencardev" path="poky-hardknott/meta-opencardev" />
-  <project name="meta-qt5-extra" revision="refs/heads/hardknott"  remote="schnitzeltony" path="poky-hardknott/meta-qt5-extra" />
-  <project name="meta-jumpnow" revision="refs/heads/hardknott"  remote="jumpnow" path="poky-hardknott/meta-jumpnow" />
-  <project name="meta-rpi64" revision="refs/heads/hardknott"  remote="jumpnow" path="poky-hardknott/meta-rpi64" />
-
 </manifest>
